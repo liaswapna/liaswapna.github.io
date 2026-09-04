@@ -30,7 +30,7 @@ export function Nav() {
       }}
     >
       <div className="max-w-5xl mx-auto flex items-center justify-between px-6 py-4">
-        
+          <a
           href="#hero"
           onClick={(e) => scrollTo(e, "hero")}
           className="font-mono text-sm font-bold tracking-wider transition-colors"
@@ -41,7 +41,7 @@ export function Nav() {
 
         <div className="hidden md:flex items-center gap-8">
           {links.map((l) => (
-            
+              <a
               key={l}
               href={`#${l.toLowerCase()}`}
               onClick={(e) => scrollTo(e, l.toLowerCase())}
@@ -51,7 +51,7 @@ export function Nav() {
               {l}
             </a>
           ))}
-          
+            <a
             href="https://github.com/liaswapna"
             target="_blank"
             rel="noreferrer"
