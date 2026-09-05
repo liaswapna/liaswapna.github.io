@@ -15,7 +15,7 @@ export const projects: readonly IProject[] = [
       { value: "20+", label: "API Endpoints" },
       { value: "5", label: "Data Models" },
     ],
-    githubUrl: "https://github.com/liaswapna",
+    githubUrl: "https://github.com/liaswapna/ecommerce-store",
     why: [
       "I wanted to demonstrate that a career break doesn't mean skill erosion. Rather than a tutorial follow-along, I designed a system with real engineering tradeoffs, the kind of decisions you make on a team, applied solo.",
       "Every architectural choice (layered boundaries, composite keys, atomic transactions) was deliberate and documented.",
@@ -45,7 +45,7 @@ export const projects: readonly IProject[] = [
       { value: "~70%", label: "API Calls Saved" },
       { value: "2", label: "CI Pipelines" },
     ],
-    githubUrl: "https://github.com/liaswapna",
+    githubUrl: "https://github.com/liaswapna/weather-app",
     why: [
       "The e-commerce project proved database design and backend architecture. This project fills a different gap: async programming, external API integration, caching strategy, and race condition handling in React.",
       "Together, the two projects show I can build data-driven CRUD systems and real-time API integration apps.",
