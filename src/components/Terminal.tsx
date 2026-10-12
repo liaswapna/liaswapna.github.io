@@ -11,13 +11,13 @@ interface TerminalLine {
 const lines: readonly TerminalLine[] = [
   { prompt: true, text: "python -m pytest" },
   { prompt: false, text: "========================" },
-  { prompt: false, text: "106 passed in 12.4s  \u2713", highlight: true },
+  { prompt: false, text: "116 passed  \u2713", highlight: true },
   { prompt: false, text: "========================" },
   { prompt: false, text: "" },
-  { prompt: true, text: "git log --oneline -3" },
-  { prompt: false, text: "a7f2e1d  atomic checkout with rollback" },
-  { prompt: false, text: "c3b8d9a  JWT auth + RBAC + anti-enum" },
-  { prompt: false, text: "f5e1a2b  layered arch (Routes\u2192Services\u2192Repos)" },
+  { prompt: true, text: "git log --oneline" },
+  { prompt: false, text: "54c032d  Fix IDOR on order detail" },
+  { prompt: false, text: "ef23420  Semantic search with keyword fallback" },
+  { prompt: false, text: "18ae4d8  Admin product pages and pagination fix" },
 ];
 
 export function Terminal() {

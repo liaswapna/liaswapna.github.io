@@ -42,7 +42,7 @@ export function About() {
               Management Orchestrator used to manage campaigns and promo codes.
             </p>
             <p className="leading-relaxed" style={{ color: c.muted }}>
-              In May 2024, I began a planned parental leave. Rather than step away from
+              In June 2024, I began a planned parental leave. Rather than step away from
               engineering, I designed and built two full-stack projects from scratch, each with
               its own automated test suite, CI pipeline, and production-style infrastructure.
             </p>

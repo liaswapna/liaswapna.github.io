@@ -15,6 +15,7 @@ export interface IProject {
   readonly stack: readonly string[];
   readonly stats: readonly IStat[];
   readonly githubUrl: string;
+  readonly liveUrl?: string;
   readonly why: readonly string[];
   readonly decisions: readonly IDecision[];
   readonly architectureLayers: readonly string[];
