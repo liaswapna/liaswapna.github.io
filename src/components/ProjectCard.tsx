@@ -45,15 +45,33 @@ export function ProjectCard({ project }: { project: IProject }) {
             </div>
           ))}
         </div>
+        <div className="flex flex-wrap gap-3">
+          {project.liveUrl && (
+            <a
+              href={project.liveUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-block px-5 py-2 rounded-lg text-sm font-semibold transition-transform hover:scale-105"
+              style={{ background: c.teal, color: c.dark }}
+            >
+              Live Demo
+            </a>
+          )}
           <a
-          href={project.githubUrl}
-          target="_blank"
-          rel="noreferrer"
-          className="inline-block px-5 py-2 rounded-lg text-sm font-semibold transition-transform hover:scale-105"
-          style={{ background: c.accent, color: c.white }}
-        >
-          GitHub
-        </a>
+            href={project.githubUrl}
+            target="_blank"
+            rel="noreferrer"
+            className="inline-block px-5 py-2 rounded-lg text-sm font-semibold transition-transform hover:scale-105"
+            style={{ background: c.accent, color: c.white }}
+          >
+            GitHub
+          </a>
+        </div>
+        {project.liveUrl && (
+          <p className="text-xs mt-2" style={{ color: c.gray }}>
+            First load may take ~1 min (free hosting).
+          </p>
+        )}
       </div>
 
       <div className="rounded-xl overflow-hidden" style={{ border: `1px solid ${c.grayLight}` }}>
